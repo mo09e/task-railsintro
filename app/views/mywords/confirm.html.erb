@@ -1,9 +1,9 @@
 <div class="contentcommon">
 <h3>以下の内容で呟きます。</h3>
-<%= form_with(model: @myword, local: true) do |form| %>
+<%= form_with(model: @myword, url: mywords_path, local: true) do |form| %>
   <%= form.hidden_field :content %>
   <p>呟き内容:<%= @myword.content %></p>
   <%= form.submit  "Tweets" %>
+  <%= form.submit 'BACK!', name: 'back' %>
 <% end %>
-<%= link_to 'BACK!', name: 'back' %>
 </div>

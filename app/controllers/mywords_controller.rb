@@ -47,10 +47,10 @@ class MywordsController < ApplicationController
 
 
   private
-    def myword_params
-      params.require(:myword).permit(:content)
-    end
-    def set_myword
-      @myword = Myword.find(params[:id])
-    end
+  def myword_params
+    params.require(:myword).permit(:content)
+  end
+  def set_myword
+    @myword = Myword.find(params[:id])
+  end
 end
