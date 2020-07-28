@@ -1,3 +1,146 @@
 // Place all the styles related to the mywords controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+ font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
+ line-height: 1.7;
+ letter-spacing: 1px;
+}
+
+ul, li {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+}
+
+a {
+ text-decoration: none;
+ color: #bbbbbb;
+ font-size: 14px;
+}
+
+form input[type="submit"] {
+ border: none;
+ cursor: pointer;
+}
+
+/* 共通レイアウト ======================== */
+body {
+ color: #bbbbbb;
+ background-color: #ffffff;
+ margin: 0;
+ min-height: 1vh;
+}
+
+.main {
+ position: absolute;
+ top: 80px;
+ width: 100%;
+ height: 700px;
+ background-color: #ffffff;
+}
+
+.container {
+ max-width: 600px;
+ margin: 60px auto;
+ padding-left: 15px;
+ padding-right: 15px;
+ clear: both;
+}
+
+.subject h3 {
+ text-align: center;
+}
+
+.contentcommon {
+ height: 10rem;
+ text-align: center;
+}
+
+/* ヘッダー ========================= */
+header {
+ height: 64px;
+ position: absolute;
+ z-index: 1;
+ width: 100%;
+ background-color: #3ecdc6;
+}
+
+.headerlayout h2 {
+  width: 110px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.headerlayout ul {
+  margin-top: 0;
+  margin-left: 200px;
+  padding: 0;
+}
+.headerlayout li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 30px;
+  float: right;
+}
+
+.headerlayout a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* フォーム================================ */
+.formcontent {
+ max-width: 20rem;
+ margin: 0 auto;
+ background-color: #ffffff;
+}
+
+/* top ================================ */
+.maintop {
+ padding: 20px;
+ top: 0;
+ width: 100%;
+ height: auto;
+ min-height: 100%;
+ color: #bbbbbb;
+ text-align: center;
+}
+
+.toptable {
+ margin-left: auto;
+ margin-right: auto;
+ width: 8em
+}
+
+/* フッター ========================= */
+footer {
+ width: 100%;
+ height: 50px;
+ position: absolute;
+ bottom: 0;
+ background-color: #3ecdc6;
+ text-align: center;
+}
+
+.footerlayout{
+  color: #ffffff;
+}
+
+.footerlayout a {
+ text-decoration: none;
+ color: #ffffff;
+ font-size: 14px;
+}
