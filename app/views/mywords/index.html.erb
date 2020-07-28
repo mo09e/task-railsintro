@@ -7,7 +7,7 @@
   </tr>
 <% @mywords.each do |myword| %>
   <tr>
-    <td><%= myword.content %></td>
+    <td id="tweets"><%= myword.content %></td>
     <td><%= link_to 'Check', myword_path(myword.id) %></td>
     <td><%= link_to "Edit", edit_myword_path(myword.id) %></td>
     <td><%= link_to 'Delete', myword_path(myword.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %>
