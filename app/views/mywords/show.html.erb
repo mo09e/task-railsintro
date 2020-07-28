@@ -1,2 +1,6 @@
-<h3>呟き内容</h3>
-<p>内容: <%= @myword.content %></p>
+<div class="contentcommon">
+<h3 class="subject">呟き内容</h3>
+<p>内容:</p>
+<p><%= @myword.content %></p>
+<%= link_to "一覧画面にもどる", mywords_path %>
+</div>
